@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado - Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="contacto.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo"> 
+            <img src="carrito.png" alt="carrito">
+            <h2 class="nombre-sup">CheapMarket </h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <form id="contacto-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" placeholder="Martin" id="nombre" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" placeholder="Messi" id="apellido" required>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="ejemplo@gmail.com" id="email" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" placeholder="+54 2284 658421" id="telefono">
+            <label for="consulta">Consulta:</label>
+            <textarea id="consulta" required></textarea>
+            <button type="button" onclick="enviarFormulario()">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p>Supermecado CheapMarket | contacto 2284659429 | CheapMarket@gmail.com</p>
+    </footer>
+</body>
+</html>

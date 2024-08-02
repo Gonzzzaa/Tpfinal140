@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {  font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-image:url(https://media.informabtl.com/wp-content/uploads/2017/10/supermercado3-e1513148128211.jpg);
+    background-size: auto;
+    background-repeat: none;
+    background-position: center;
+    object-fit: cover;
+    max-width: 100vw;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo img {
+        height: 40px;
+        width: 40px;
+    }
+    .logo {
+         display: flex;
+         gap: 10px;
+    }
+     
+header {
+    background: #ff6f61; 
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgb(255, 255, 255);
+}
+.nombre-sup {
+    color:#ffffff;
+    text-align: center;
+
+}
+
+.historia-container{
+    h1{
+        margin-bottom: 110px; 
+    }
+    p{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        color:black;
+    }
+}
+
+.historia-titulo {
+    font-size: 2.5em;
+    color: #050505;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.historia-titulo::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: #000000;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.historia-titulo:hover {
+    color: #fcc174;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.historia-titulo:active {
+    color: #ff6f61;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffe600;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #ff6f61;
+}
+
+main p {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+footer {
+    background: #ff6f61;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    bottom: 0;
+
+}
+
+
+#productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.producto {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+}
+.lista-prod{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+.lista-prod:hover {
+    color: #ffe600;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.lista-prod:active {
+    color: #ff6f61;
+}
+
+.producto-imagen {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.producto-nombre {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+}
+
+.producto-precio {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.producto-cantidad {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#boton-comprar button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    }
+
+   #boton-comprar button:hover {
+            background-color: #0056b3;
+    }
+    #boton-comprar:hover {
+        color: #fcc174;
+        cursor: pointer;
+    }
+    
+    #lista-prod:active {
+        color: #ff6f61;
+    }
+
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        background: #f4f4f4;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    
+    form input, form textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1em;
+    }
+
+
+    button{
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
